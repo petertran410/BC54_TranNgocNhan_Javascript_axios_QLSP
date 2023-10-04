@@ -19,13 +19,15 @@
       integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
       crossorigin="anonymous" />
 
+    <link rel="stylesheet" href="../css/style.css">
+
     <title>Quản lý sản phẩm</title>
   </head>
   <body>
     <div class="container">
       <div class="tab-content">
         <!--Danh sách sản phẩm -->
-        <div role="tabpanel" class="tab-pane in active" id="SP_List">
+        <div role="tabpanel" class="tab-pane in active" id="ProductList">
           <div class="row">
             <div class="col-md-8">
               <!-- BEGIN BUTTOM THÊM MỚI -->
@@ -69,7 +71,7 @@
                 <th>Mô Tả</th>
                 <th>Action</th>
               </thead>
-              <tbody id="tblDanhSachSP"></tbody>
+              <tbody id="TableProductList"></tbody>
             </table>
             <!-- END TABLE SẢN PHẨM -->
           </div>
@@ -94,28 +96,28 @@
               <div class="form-group">
                 <label>Tên Sản Phẩm</label>
                 <input
-                  id="TenSP"
+                  id="ProductName"
                   class="form-control"
                   placeholder="Nhập vào tên sản phẩm" />
               </div>
               <div class="form-group">
                 <label>Giá</label>
                 <input
-                  id="GiaSP"
+                  id="ProductPrice"
                   class="form-control"
                   placeholder="Nhập vào giá" />
               </div>
               <div class="form-group">
                 <label>Hình Ảnh</label>
                 <input
-                  id="HinhSP"
+                  id="ProductImage"
                   class="form-control"
                   placeholder="Nhập vào hình sản phẩm" />
               </div>
               <div class="form-group">
                 <label>Mô tả</label>
                 <input
-                  id="moTaSP"
+                  id="ProductDesc"
                   class="form-control"
                   placeholder="Nhập vào mô tả sản phẩm" />
               </div>
@@ -133,7 +135,7 @@
         </div>
       </div>
     </div>
-    <style>
+    <!-- <style>
       .container {
         min-width: 310px;
         max-width: 800px;
@@ -141,7 +143,7 @@
         margin: 0 auto;
         margin-top: 70px;
       }
-    </style>
+    </style> -->
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"

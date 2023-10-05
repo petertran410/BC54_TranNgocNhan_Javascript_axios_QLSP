@@ -24,6 +24,11 @@
     <title>Quản lý sản phẩm</title>
   </head>
   <body>
+    <div id="spinner">
+      <div class="inner_spinner spinner-border text-warning" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
     <div class="container">
       <div class="tab-content">
         <!--Danh sách sản phẩm -->
@@ -124,10 +129,10 @@
             </div>
             <!-- Modal footer -->
             <div class="modal-footer">
-              <button class="btn btn-success" onclick="addProduct()">
+              <button class="btn btn-success" onclick="addProductFromList()">
                 Thêm
               </button>
-              <button class="btn btn-success" onclick="updateProduct()">
+              <button class="btn btn-success" onclick="updateProductFromList()">
                 Cập nhật
               </button>
             </div>

@@ -18,3 +18,11 @@ function showThongTinSanPhamTuForm(info) {
   document.querySelector("#ProductImage").value = info.img;
   document.querySelector("#ProductDesc").value = info.desc;
 }
+
+function LoadingOn() {
+  document.querySelector("#spinner").style.display = "flex";
+}
+
+function LoadingOff() {
+  document.querySelector("#spinner").style.display = "none";
+}
